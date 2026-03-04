@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>George Tassios — Software Engineer</title>
+  <meta name="description" content="George Tassios — Software Engineer. HPC, low-level programming, MPI, Linux." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="brand">
+      <h1>George Tassios</h1>
+      <p class="subtitle">Software Engineer</p>
+    </div>
+
+    <nav class="nav">
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="summary" class="card">
+      <h2>Summary</h2>
+      <p>
+        Software Engineer with hands-on experience in High-Performance Computing (HPC) and low-level programming.
+        Experienced in parallel systems development and coordinated multi-process execution.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <div class="grid">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li><strong>Proficient:</strong> C/C++, Bash</li>
+            <li><strong>Experience:</strong> SQL, Python</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tech Stack</h3>
+          <ul>
+            <li>Git</li>
+            <li>Parallel Computing (MPI)</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Web Stack</h3>
+          <ul>
+            <li>Java EE</li>
+            <li>RESTful API</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Master of Engineering (MEng) in Computer Science</h3>
+          <span class="muted">University of West Attica - 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Linux &amp; Bash Scripting</h3>
+          <span class="muted">2020</span>
+        </div>
+        <ul>
+          <li>Developed Bash scripts to automate user permission management, reducing manual workload by 50% for Sysadmin.</li>
+          <li>Built shell pipelines for text processing using <code>awk</code> and <code>sed</code>, minimizing manual file editing.</li>
+          <li>Parsed <code>/etc/passwd</code> to verify user existence, enabling safer system automation.</li>
+        </ul>
+        <p class="links">
+          <a class="pill" href="https://github.com/Ra1ld/Bash" target="_blank" rel="noopener">Source ↗</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Parallel Computing (C / MPI)</h3>
+          <span class="muted">2025</span>
+        </div>
+        <ul>
+          <li>Wrote programs solely in C89 with explicit control over memory allocation to ensure maximum cross-platform stability and predictability.</li>
+          <li>Performed manual memory management across all processes, ensuring zero memory leaks.</li>
+          <li>Enforced strict process synchronization resulting in identical outputs across 100+ repeated executions.</li>
+          <li>Treated the distributed system as a single coordinated execution environment.</li>
+        </ul>
+        <p class="links">
+          <a class="pill" href="https://github.com/Ra1ld/MPI" target="_blank" rel="noopener">Source ↗</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Information Retrieval System (Python)</h3>
+          <span class="muted">2025</span>
+        </div>
+        <ul>
+          <li>Designed and implemented an end-to-end information retrieval pipeline.</li>
+          <li>Represented documents using the Vector Space Model.</li>
+          <li>Ranked documents using cosine similarity scoring.</li>
+        </ul>
+        <p class="links">
+          <a class="pill" href="https://github.com/Ra1ld/Information-retrieval" target="_blank" rel="noopener">Source ↗</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a class="pill" href="mailto:george.tassios.2000@gmail.com">george.tassios.2000@gmail.com</a>
+        <a class="pill" href="https://github.com/Ra1ld" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="pill" href="https://www.linkedin.com/in/gtass/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <p class="muted small">Location: Greece, GR · Phone: +30 698 772 6625</p>
+    </section>
+
+    <footer class="footer">
+      <p class="muted small">© <span id="year"></span> George Tassios · Built with GitHub Pages</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
